@@ -1,11 +1,11 @@
-Iquidus Explorer- BTG edition - 1.6.1
+BitcoinX Explorer- BTC2 edition - 1.0.0
 ================
 
 An open source block explorer written in node.js.
 
 ### See it in action
 
-*  [Bitcoin Gold](http://btgblocks.com)
+*  [BitcoinX](http://truebitcoin.org)
 
 
 ### Requires
@@ -32,10 +32,6 @@ Create user with read/write access:
 
     > db.addUser( { user: "username", pwd: "password", roles: [ "readWrite"] })
 
-### Get the source
-
-    git clone https://github.com/vattay/iquidus-btg explorer
-
 ### Install node modules
 
     cd explorer && npm install --production
@@ -52,7 +48,7 @@ Create user with read/write access:
 
 *note: mongod must be running to start the explorer*
 
-As of version 1.4.0 the explorer defaults to cluster mode, forking an instance of its process to each cpu core. This results in increased performance and stability. Load balancing gets automatically taken care of and any instances that for some reason die, will be restarted automatically. For testing/development (or if you just wish to) a single instance can be launched with
+As of version 1.0.0 the explorer defaults to cluster mode, forking an instance of its process to each cpu core. This results in increased performance and stability. Load balancing gets automatically taken care of and any instances that for some reason die, will be restarted automatically. For testing/development (or if you just wish to) a single instance can be launched with
 
     node --stack-size=10000 bin/instance
 
